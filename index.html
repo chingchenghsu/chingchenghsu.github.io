@@ -1,49 +1,53 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Aerial by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <title>你的名字</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Noto Sans TC", Arial;
+      max-width: 760px;
+      margin: 60px auto;
+      padding: 0 16px;
+      line-height: 1.7;
+    }
+    h1 { margin-bottom: 0; }
+    .sub { color: #666; margin-top: 6px; }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 18px;
+      margin: 20px 0;
+    }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Adam Jensen</h1>
-						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
-						<nav>
-							<ul>
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<h1>你的名字</h1>
+<div class="sub">Data Scientist｜AI 講師｜研究者</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+<div class="card">
+  <h2>關於我</h2>
+  <p>
+    簡短介紹你是誰、在做什麼、關心什麼。
+  </p>
+</div>
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<div class="card">
+  <h2>專案 / 課程</h2>
+  <ul>
+    <li><a href="https://github.com/你的帳號">GitHub</a></li>
+    <li>GenAI × Classical ML 線上課程</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>聯絡方式</h2>
+  <p>Email：you@example.com</p>
+</div>
+
+</body>
 </html>
+
