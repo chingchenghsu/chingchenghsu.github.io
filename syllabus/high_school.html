@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI × 見識｜三小時高中生課程</title>
+  <meta name="description" content="AI時代的成功與幸福：從高中到世界舞台的選擇｜3小時課程大綱＋報名＋付款" />
+
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.08);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --line: rgba(255,255,255,.14);
+      --blue: #3b82f6;
+      --blue2:#60a5fa;
+      --ok:#22c55e;
+      --warn:#f59e0b;
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1040px;
+      font-synthesis-weight: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(59,130,246,.35), transparent 55%),
+        radial-gradient(900px 500px at 90% 10%, rgba(96,165,250,.20), transparent 60%),
+        linear-gradient(180deg, #060b16 0%, #0b1220 55%, #070b14 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 28px 18px 80px; }
+
+    .nav{
+      position: sticky; top: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(6,11,22,.55);
+      border-bottom: 1px solid var(--line);
+      z-index: 10;
+    }
+    .nav .inner{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+    }
+    .brand{ display:flex; align-items:center; gap:10px; font-weight: 700; letter-spacing:.2px; }
+    .dot{
+      width: 10px; height: 10px; border-radius: 999px;
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      box-shadow: 0 0 0 6px rgba(59,130,246,.15);
+    }
+    .navlinks{ display:flex; gap:14px; flex-wrap: wrap; }
+    .navlinks a{ color: var(--muted); font-size: 14px; }
+    .navlinks a:hover{ color: var(--text); }
+
+    .hero{
+      padding: 34px 0 18px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    @media (max-width: 880px){
+      .hero{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .heroLeft{ padding: 28px; }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      background: rgba(59,130,246,.14);
+      border: 1px solid rgba(59,130,246,.25);
+      color: rgba(255,255,255,.92);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+    h1{
+      margin: 0 0 10px;
+      font-size: clamp(28px, 3.6vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -.4px;
+    }
+    .subtitle{
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 18px;
+      max-width: 58ch;
+    }
+    .ctaRow{
+      display:flex; flex-wrap: wrap; gap: 12px;
+      margin-top: 18px;
+      align-items:center;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .08s ease, background .2s ease, border .2s ease;
+      user-select: none;
+      font-size: 15px;
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btnPrimary{
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color: #061023;
+      border-color: rgba(255,255,255,.15);
+    }
+    .btnPrimary:hover{ filter: brightness(1.05); }
+    .btnGhost{
+      background: rgba(255,255,255,.06);
+      border-color: var(--line);
+      color: var(--text);
+    }
+    .btnGhost:hover{ background: rgba(255,255,255,.09); }
+
+    .heroRight{ padding: 18px; display:flex; flex-direction: column; gap: 12px; }
+    .mini{
+      padding: 16px;
+      background: var(--card2);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+    .mini h3{ margin:0 0 6px; font-size: 14px; color: rgba(255,255,255,.9); }
+    .mini p{ margin:0; color: var(--muted); font-size: 14px; }
+    .pillRow{ display:flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .pill{
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.82);
+    }
+
+    section{ margin-top: 18px; }
+    .sectionTitle{
+      margin: 18px 0 10px;
+      font-size: 18px;
+      color: rgba(255,255,255,.92);
+      letter-spacing: .2px;
+    }
+
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 880px){
+      .grid2{ grid-template-columns: 1fr; }
+    }
+    .contentCard{ padding: 18px; }
+
+    ul{ margin: 10px 0 0 18px; color: var(--muted); }
+    li{ margin: 6px 0; }
+
+    .table{
+      width:100%;
+      border-collapse: collapse;
+      overflow:hidden;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .table th, .table td{
+      padding: 12px 12px;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      vertical-align: top;
+      font-size: 14px;
+    }
+    .table th{
+      text-align:left;
+      color: rgba(255,255,255,.88);
+      background: rgba(255,255,255,.05);
+      font-weight: 800;
+    }
+    .table td{ color: var(--muted); }
+    .tag{
+      display:inline-flex;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      margin-right: 6px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.82);
+    }
+    .tag.ok{ border-color: rgba(34,197,94,.35); background: rgba(34,197,94,.12); }
+    .tag.warn{ border-color: rgba(245,158,11,.35); background: rgba(245,158,11,.12); }
+
+    .faq details{
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 14px;
+      background: rgba(255,255,255,.04);
+      margin-bottom: 10px;
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight: 800;
+      color: rgba(255,255,255,.9);
+    }
+    .faq p{ color: var(--muted); margin: 8px 0 0; }
+
+    footer{
+      margin-top: 26px;
+      color: rgba(255,255,255,.55);
+      font-size: 13px;
+      text-align:center;
+    }
+
+    /* Modal */
+    .modalBackdrop{
+      position:fixed; inset:0;
+      background: rgba(0,0,0,.55);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding: 18px;
+      z-index: 99;
+    }
+    .modal{
+      width: min(720px, 100%);
+      border-radius: 18px;
+      background: rgba(10,16,28,.92);
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 30px 90px rgba(0,0,0,.55);
+      overflow:hidden;
+    }
+    .modalHeader{
+      padding: 14px 16px;
+      display:flex; align-items:center; justify-content:space-between;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .modalHeader strong{ font-size: 14px; }
+    .x{
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.86);
+      width: 34px; height: 34px;
+      border-radius: 10px;
+      cursor:pointer;
+    }
+    .modalBody{ padding: 16px; }
+    .formGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 640px){
+      .formGrid{ grid-template-columns: 1fr; }
+    }
+    label{ font-size: 12px; color: rgba(255,255,255,.75); display:block; margin-bottom:6px; }
+    input, select, textarea{
+      width:100%;
+      padding: 11px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.9);
+      outline:none;
+    }
+    textarea{ min-height: 90px; resize: vertical; }
+    .modalFooter{
+      padding: 14px 16px;
+      display:flex; gap: 10px; flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,.12);
+      justify-content:flex-end;
+    }
+    .note{
+      color: rgba(255,255,255,.62);
+      font-size: 12px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="inner">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>AI × 見識｜三小時課程</span>
+      </div>
+      <div class="navlinks">
+        <a href="#syllabus">課程大綱</a>
+        <a href="#audience">適合對象</a>
+        <a href="#register">報名與付款</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- HERO -->
+    <div class="hero">
+      <div class="card heroLeft">
+        <div class="badge">🎓 高中生｜3 小時｜AI × 見識 × 生涯選擇</div>
+        <h1>AI時代的成功與幸福：<br/>從高中到世界舞台的選擇</h1>
+        <p class="subtitle">
+          這堂課不是教你「背AI名詞」，而是用 AI 產業的真實世界，帶你看懂：
+          <b>學校 vs 社會的差異、出國與研究所的選擇、以及如何建立成功與幸福的底盤。</b>
+        </p>
+
+        <div class="ctaRow" id="register">
+          <button class="btn btnPrimary" onclick="openModal()">立即報名</button>
+
+          <!-- ✅ 將 href 換成你的金流付款頁：Stripe/綠界/藍新等 checkout URL -->
+          <a class="btn btnGhost" href="https://example.com/checkout" target="_blank" rel="noopener">
+            立即付款（替換連結）
+          </a>
+
+          <!-- ✅ 可選：下載課綱 PDF/或導向LINE官方帳號 -->
+          <a class="btn btnGhost" href="#syllabus">先看課綱</a>
+        </div>
+
+        <p class="note">
+          * 付款按鈕會導向外部金流頁（最簡單）。你只要把上面 checkout 連結換成自己的即可。
+        </p>
+      </div>
+
+      <div class="card heroRight">
+        <div class="mini">
+          <h3>你會帶走什麼？</h3>
+          <p>一套「AI時代的選擇框架」：出國、研究所、科系、職涯，不再靠感覺。</p>
+          <div class="pillRow">
+            <span class="pill">見識力</span>
+            <span class="pill">決策模型</span>
+            <span class="pill">AI產業真相</span>
+            <span class="pill">自我認識</span>
+          </div>
+        </div>
+
+        <div class="mini">
+          <h3>課程形式</h3>
+          <p>互動提問＋小組討論＋AI示範＋行動任務（適合校園講座/社團/營隊）。</p>
+          <div class="pillRow">
+            <span class="pill">3 hours</span>
+            <span class="pill">Workshop style</span>
+            <span class="pill">High engagement</span>
+          </div>
+        </div>
+
+        <div class="mini">
+          <h3>可客製化</h3>
+          <p>可依學校需求加上：科系探索、面試準備、作品集/GitHub入門等。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUDIENCE -->
+    <section id="audience">
+      <div class="sectionTitle">適合對象</div>
+      <div class="grid2">
+        <div class="card contentCard">
+          <div style="margin-bottom:8px;">
+            <span class="tag ok">適合</span>
+            <span class="tag">高一～高三</span>
+            <span class="tag">對AI好奇</span>
+            <span class="tag">正在思考升學/出國</span>
+          </div>
+          <ul>
+            <li>對未來科系、出國、研究所有焦慮或不確定</li>
+            <li>想理解 AI 產業在做什麼、需要什麼能力</li>
+            <li>想找到「成功與幸福」不衝突的路徑</li>
+          </ul>
+        </div>
+        <div class="card contentCard">
+          <div style="margin-bottom:8px;">
+            <span class="tag warn">提醒</span>
+            <span class="tag">不是純技術課</span>
+          </div>
+          <ul>
+            <li>這堂課核心是「見識 × 判斷 × 選擇」，不是 coding 教學</li>
+            <li>會有 AI 示範，但重點在如何用 AI 幫你做更好的決定</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYLLABUS -->
+    <section id="syllabus">
+      <div class="sectionTitle">三小時課程大綱（Syllabus）</div>
+
+      <table class="table" aria-label="syllabus table">
+        <thead>
+          <tr>
+            <th style="width:140px;">時間</th>
+            <th>主題</th>
+            <th style="width:260px;">內容與活動</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Part 1<br/>45 分鐘</td>
+            <td>
+              <b>AI產業到底是什麼樣的世界？</b><br/>
+              <span class="tag">Reality check</span>
+              <span class="tag">Mindset</span>
+            </td>
+            <td>
+              <ul>
+                <li>AI 是什麼（去神化：它是模式預測，不是「智慧」）</li>
+                <li>AI產業工作真相：能力、合作、溝通、商業思維</li>
+                <li>互動：如果你成績很好但不會合作，會怎樣？</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Part 2<br/>50 分鐘</td>
+            <td>
+              <b>出國 vs 留台灣：視野與代價</b><br/>
+              <span class="tag">Global</span>
+              <span class="tag">Trade-off</span>
+            </td>
+            <td>
+              <ul>
+                <li>出國的好處：視野、人脈、市場</li>
+                <li>出國的真相：孤單、文化衝擊、壓力與不確定</li>
+                <li>小組討論：家人反對你出國，你怎麼選？</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Part 3<br/>50 分鐘</td>
+            <td>
+              <b>要不要讀研究所？</b><br/>
+              <span class="tag">Graduate school</span>
+              <span class="tag">Career</span>
+            </td>
+            <td>
+              <ul>
+                <li>研究所的價值：深化專業、進階門檻、研究能力</li>
+                <li>常見誤區：逃避、跟風、不清楚目標</li>
+                <li>關鍵句：研究所不是延長學生身分，是延長專業能力</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Part 4<br/>40 分鐘</td>
+            <td>
+              <b>成功與幸福能同時存在嗎？</b><br/>
+              <span class="tag ok">Core</span>
+              <span class="tag">Meaning</span>
+            </td>
+            <td>
+              <ul>
+                <li>三個迷思：有錢=幸福、名校=成功、出國=必勝</li>
+                <li>幸福四支柱：能力、人際、健康、選擇權</li>
+                <li>AI時代的穩定器：自我認識＋長期能力＋見識</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>收尾<br/>15 分鐘</td>
+            <td>
+              <b>決策框架：三個問題</b><br/>
+              <span class="tag">Decision</span>
+            </td>
+            <td>
+              <ul>
+                <li>這個選擇讓我變強嗎？</li>
+                <li>這個選擇符合我的個性嗎？</li>
+                <li>這個選擇是逃避還是成長？</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Signup & Payment -->
+    <section>
+      <div class="sectionTitle">報名與付款方式（你可選最簡單方案）</div>
+      <div class="grid2">
+        <div class="card contentCard">
+          <div style="margin-bottom:8px;">
+            <span class="tag ok">方案 A：最簡單</span>
+            <span class="tag">外部金流 Checkout</span>
+          </div>
+          <ul>
+            <li>你用 Stripe / 綠界 / 藍新 產生一個「付款連結」</li>
+            <li>本頁「立即付款」按鈕直接導向該連結</li>
+            <li>報名用本頁表單（或 Google Form）收集資料</li>
+          </ul>
+        </div>
+
+        <div class="card contentCard">
+          <div style="margin-bottom:8px;">
+            <span class="tag">方案 B：更完整</span>
+            <span class="tag warn">需要後端</span>
+          </div>
+          <ul>
+            <li>用後端（例如 Node/Next.js）串金流 API</li>
+            <li>付款成功後自動寄確認信、建立名單、開課提醒</li>
+            <li>適合未來要做多堂課、多人次、會員系統</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="sectionTitle">FAQ</div>
+
+      <details>
+        <summary>我只有 GitHub Pages，也可以做報名＋付款嗎？</summary>
+        <p>可以。最簡單做法是：GitHub Pages 放課程頁 → 報名用表單（Google Form / 本頁 modal）→ 付款用「外部金流付款連結」導出去。</p>
+      </details>
+
+      <details>
+        <summary>這個「立即報名」會把資料送到哪？</summary>
+        <p>目前是示範用（會開啟 email 草稿或顯示成功訊息）。你可以改成送到 Google Form、或用 Formspree/SheetDB 之類的無後端服務。</p>
+      </details>
+
+      <details>
+        <summary>我想要「刷卡後自動寄信」，可以嗎？</summary>
+        <p>可以，但需要更完整的架構（例如 Stripe + 後端 webhook + Email 服務）。如果你要走這條路，我可以給你一個最短可行的技術方案。</p>
+      </details>
+    </section>
+
+    <footer>
+      © <span id="year"></span> AI × 見識課程｜單頁示範版（可部署到 GitHub Pages）
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modalBackdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-label="報名表單">
+    <div class="modal">
+      <div class="modalHeader">
+        <strong>立即報名｜填寫資訊</strong>
+        <button class="x" onclick="closeModal()" aria-label="close">✕</button>
+      </div>
+      <div class="modalBody">
+        <div class="formGrid">
+          <div>
+            <label>學生姓名</label>
+            <input id="name" placeholder="王小明" />
+          </div>
+          <div>
+            <label>年級</label>
+            <select id="grade">
+              <option value="">請選擇</option>
+              <option>高一</option>
+              <option>高二</option>
+              <option>高三</option>
+            </select>
+          </div>
+          <div>
+            <label>聯絡 Email</label>
+            <input id="email" type="email" placeholder="name@email.com" />
+          </div>
+          <div>
+            <label>手機（選填）</label>
+            <input id="phone" placeholder="09xx-xxx-xxx" />
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <label>你最想解決的問題（選填）</label>
+          <textarea id="goal" placeholder="例如：我想知道要不要出國？適合讀研究所嗎？AI 產業到底做什麼？"></textarea>
+        </div>
+
+        <p class="note">* 送出後會開啟你的 Email 寄信（最簡單、免後端）。你也可以改成串 Google Form。</p>
+      </div>
+      <div class="modalFooter">
+        <button class="btn btnGhost" onclick="closeModal()">取消</button>
+        <button class="btn btnPrimary" onclick="submitForm()">送出報名</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const modal = document.getElementById("modalBackdrop");
+
+    function openModal(){
+      modal.style.display = "flex";
+      // focus first input
+      setTimeout(() => document.getElementById("name").focus(), 50);
+    }
+    function closeModal(){
+      modal.style.display = "none";
+    }
+
+    // Close when clicking outside modal
+    modal.addEventListener("click", (e) => {
+      if(e.target === modal) closeModal();
+    });
+
+    function submitForm(){
+      const name = document.getElementById("name").value.trim();
+      const grade = document.getElementById("grade").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const goal = document.getElementById("goal").value.trim();
+
+      if(!name || !grade || !email){
+        alert("請至少填寫：姓名、年級、Email");
+        return;
+      }
+
+      // ✅ 最簡單做法：mailto（免後端）
+      // 你也可以改成送到 Google Form / Formspree
+      const subject = encodeURIComponent("AI × 見識｜課程報名");
+      const body = encodeURIComponent(
+`報名資訊如下：
+- 姓名：${name}
+- 年級：${grade}
+- Email：${email}
+- 手機：${phone || "（未填）"}
+
+想解決的問題：
+${goal || "（未填）"}
+`
+      );
+
+      // TODO: 把 your@email.com 換成你收信的信箱
+      window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
+
+      closeModal();
+    }
+  </script>
+</body>
+</html>
